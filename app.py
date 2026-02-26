@@ -84,10 +84,7 @@ def generate(
 
 def build_ui():
     """Build the Gradio interface."""
-    with gr.Blocks(
-        title="Character Expression Generator",
-        theme=gr.themes.Soft(),
-    ) as app:
+    with gr.Blocks(title="Character Expression Generator") as app:
         gr.Markdown("# Character Expression Generator")
         gr.Markdown(
             "Upload a reference image, select emotions, and generate consistent expression variants "
@@ -155,4 +152,4 @@ def build_ui():
 
 if __name__ == "__main__":
     app = build_ui()
-    app.launch()
+    app.launch(theme=gr.themes.Soft())
