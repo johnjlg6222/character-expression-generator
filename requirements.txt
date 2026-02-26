@@ -1,0 +1,6 @@
+gradio>=4.0
+httpx
+Pillow
+rembg
+numpy
+python-dotenv
